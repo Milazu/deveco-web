@@ -1,16 +1,20 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inico",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Quienes somos",
       "url": "/about"
     },
     {
-      "name": "Elements",
+      "name": "Servicios",
       "url": "/elements"
+    },
+    {
+      "name": "Contacto",
+      "url": "/contact"
     },
     {
       "name": "Pages",
@@ -46,12 +50,12 @@
   ],
   "footer": [
     {
-      "name": "About",
+      "name": "Quienes somos",
       "url": "/about"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Contacto",
+      "url": "/contact"
     },
     {
       "name": "Privacy Policy",
