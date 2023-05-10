@@ -17,7 +17,6 @@ const authors = await getSinglePage("authors");
         {
           authors.map((author) => (
             <div class="mb-14 md:col-6 lg:col-4">
-              <AuthorCard data={author} />
             </div>
           ))
         }
