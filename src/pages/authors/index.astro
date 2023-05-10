@@ -5,11 +5,11 @@ import { getSinglePage } from "@lib/contentParser.astro";
 import PageHeader from "@partials/PageHeader.astro";
 import { getEntryBySlug } from "astro:content";
 
-const authorIndex = await getEntryBySlug<any, string>("authors", "_index");
+const authorIndex = await getEntryBySlug("authors", "_index");
 const authors = await getSinglePage("authors");
 ---
 
-<Base title={authorIndex.data.title}>
+<Base title={authorIndex.data}>
   <PageHeader title={authorIndex.data.title} />
   <section class="section-sm pb-0">
     <div class="container">
