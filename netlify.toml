@@ -17,7 +17,7 @@ for = "/*" # This defines which paths this specific [[headers]] block will cover
 
 [[redirects]]
   from = "/intranet"
-  to = "/secured"
+  to = "/login"
   force = true
   status = 200
   conditions = {Role = ["editor"]}
