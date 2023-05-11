@@ -19,5 +19,17 @@ for = "/*" # This defines which paths this specific [[headers]] block will cover
   from = "/intranet"
   to = "/login"
   force = true
-  status = 200!
-  conditions = {Role = ["editor"]}
+  status = 302
+
+[[redirects]]
+  from = "/intranet/*"
+  to = "/login"
+  force = true
+  status = 302
+
+[[redirects]]
+from = "/intranet"
+to = "/intranet"
+force = true
+status = 200
+conditions = {Role = ["editor"]}
