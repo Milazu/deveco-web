@@ -13,3 +13,11 @@ for = "/*" # This defines which paths this specific [[headers]] block will cover
 # X-XSS-Protection = "1; mode=block"
 # Referrer-Policy = "same-origin"
 # Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+
+[[redirects]]
+  from = "/intranet"
+  to = "/secured"
+  force = true
+  status = 200
+  conditions = {Role = ["editor"]}

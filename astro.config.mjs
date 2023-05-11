@@ -8,6 +8,7 @@ import { defineConfig } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,7 +35,7 @@ export default defineConfig({
         "@/shortcodes/Youtube",
       ],
     }),
-    mdx(),
+    mdx(), partytown()
   ],
   markdown: {
     remarkPlugins: [
