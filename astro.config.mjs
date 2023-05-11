@@ -9,7 +9,7 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
-import partytown from "@astrojs/partytown";
+//import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,7 +24,7 @@ export default defineConfig({
     serviceEntryPoint: "@astrojs/image/sharp"
   }), AutoImport({
     imports: ["@shortcodes/Button", "@shortcodes/Accordion", "@shortcodes/Notice", "@shortcodes/Video", "@shortcodes/Youtube"]
-  }), mdx(), partytown()],
+  }), mdx()/*, partytown()*/],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, {
       test: "Table of contents"
