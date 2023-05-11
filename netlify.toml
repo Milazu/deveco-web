@@ -3,7 +3,7 @@ publish = "dist"
 command = "astro build"
 
 [build.environment]
-NODE_VERSION = "18"
+NODE_VERSION = "18.16.0"
 
 [[headers]]
 for = "/*" # This defines which paths this specific [[headers]] block will cover.
