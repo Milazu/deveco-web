@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Tecnología, Personas, Innovación"
-  content: "Estos son los valores que nos definen."
+  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
+  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
   image: "/images/banner.png"
   button:
     enable: true

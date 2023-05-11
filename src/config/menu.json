@@ -1,20 +1,16 @@
 {
   "main": [
     {
-      "name": "Inico",
+      "name": "Home",
       "url": "/"
     },
     {
-      "name": "Quienes somos",
+      "name": "About",
       "url": "/about"
     },
     {
-      "name": "Servicios",
+      "name": "Elements",
       "url": "/elements"
-    },
-    {
-      "name": "Contacto",
-      "url": "/contacto"
     },
     {
       "name": "Pages",
@@ -22,8 +18,8 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Contacto",
-          "url": "/contacto"
+          "name": "Contact",
+          "url": "/contact"
         },
         {
           "name": "Blog",
@@ -50,12 +46,12 @@
   ],
   "footer": [
     {
-      "name": "Quienes somos",
+      "name": "About",
       "url": "/about"
     },
     {
-      "name": "Contacto",
-      "url": "/contacto"
+      "name": "Elements",
+      "url": "/elements"
     },
     {
       "name": "Privacy Policy",

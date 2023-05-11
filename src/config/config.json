@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "Deveco.IT",
+    "title": "Astroplate",
     "base_url": "https://astroplate.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "250",
-    "logo_height": "60",
-    "logo_text": "Deveco.IT"
+    "logo_width": "150",
+    "logo_height": "30",
+    "logo_text": "Astroplate"
   },
 
   "settings": {
@@ -23,7 +23,8 @@
   },
 
   "params": {
-    "contact_form_action": "/"
+    "contact_form_action": "#",
+    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
   },
 
   "navigation_button": {
@@ -33,14 +34,14 @@
   },
 
   "disqus": {
-    "enable": false,
+    "enable": true,
     "shortname": "themefisher-template",
     "settings": {}
   },
 
   "metadata": {
-    "meta_author": "Deveco.IT",
+    "meta_author": "zeon.studio",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Deveco.IT Soluciones tecnológicas"
+    "meta_description": "astro and tailwind boilerplate"
   }
 }
