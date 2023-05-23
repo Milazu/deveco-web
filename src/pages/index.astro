@@ -1,4 +1,5 @@
 ---
+import AuthorCard from "@/components/AuthorCard.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
@@ -6,11 +7,17 @@ import Testimonial from "@/partials/Testimonial.astro";
 import { Image } from "@astrojs/image/components";
 import { getEntryBySlug } from "astro:content";
 import { FaCheck } from "react-icons/fa/index.js";
+import { getSinglePage } from "@/lib/contentParser.astro";
+
 
 const homepage = await getEntryBySlug("homepage", "index");
 const testimonial = await getEntryBySlug("sections", "testimonial");
 const call_to_action = await getEntryBySlug("sections", "call-to-action");
 const { banner, features } = homepage.data;
+
+
+const authorIndex = await getEntryBySlug<any, string>("authors", "index");
+const authors = await getSinglePage("authors");
 ---
 
 <Base>
@@ -45,6 +52,25 @@ const { banner, features } = homepage.data;
     </div>
   </section>
   <!-- /Banner -->
+
+  <!-- Authors -->
+  <section class="section-sm pb-0">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="mb-16 text-center">
+          <h2 class="mb-4 deveco-text-gradient">{authorIndex.data.title}</h2>
+          </div>  
+        {
+          authors.map((author:any) => (
+            <div class="mb-14 md:col-6 lg:col-4">
+              <AuthorCard data={author} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
 
   <!-- Features -->
   {
