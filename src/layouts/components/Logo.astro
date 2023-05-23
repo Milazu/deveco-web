@@ -1,5 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
+import SvgIcon from '../components/SvgIcon.astro';
 import config from "@/config/config.json";
 
 const { src, srcDarkmode } = Astro.props;
@@ -26,19 +27,22 @@ const { theme_switcher }: { theme_switcher: boolean } = config.settings;
   {
     src || srcDarkmode || logo || logo_darkmode ? (
       <>
-        <Image
-          src={src ? src : logo}
-          class={`inline-block ${theme_switcher && "dark:hidden"}`}
-          width={logo_width.replace("px", "") * 2}
-          height={logo_height.replace("px", "") * 2}
-          alt={title}
-          fit={"contain"}
-          background={"rgba(0,0,0,0)"}
-          style={{
-            height: logo_height.replace("px", "") + "px",
-            width: logo_width.replace("px", "") + "px",
-          }}
-        />
+      {logo.startsWith("/svg") && (<SvgIcon icon="full_heavy_logo" />)}
+        {logo.startsWith("/images") && (
+          <Image
+            src={src ? src : logo}
+            class={`inline-block ${theme_switcher && "dark:hidden"}`}
+            width={logo_width.replace("px", "") * 2}
+            height={logo_height.replace("px", "") * 2}
+            alt={title}
+            fit={"contain"}
+            background={"rgba(0,0,0,0)"}
+            style={{
+              height: logo_height.replace("px", "") + "px",
+              width: logo_width.replace("px", "") + "px",
+            }}
+          />
+        )}
         {theme_switcher && (
           <Image
             src={srcDarkmode ? srcDarkmode : logo_darkmode}

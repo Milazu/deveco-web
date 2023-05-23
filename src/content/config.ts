@@ -23,11 +23,15 @@ const authorsCollection = defineCollection({
     email: z.string().optional(),
     image: z.string().optional(),
     description: z.string().optional(),
+    position: z.string().optional(),
     social: z
       .object({
         facebook: z.string().optional(),
         twitter: z.string().optional(),
+        linkedin: z.string().optional(),
         instagram: z.string().optional(),
+        behance: z.string().optional(),
+        website: z.string().optional(),
       })
       .optional(),
     draft: z.boolean().optional(),

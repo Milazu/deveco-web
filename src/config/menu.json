@@ -1,16 +1,20 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Quienes somos",
+      "url": "/quienes-somos"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Contacto",
+      "url": "/contact"
+    },
+    {
+      "name": "Blog",
+      "url": "/posts"
     },
     {
       "name": "Pages",
@@ -46,12 +50,16 @@
   ],
   "footer": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Quienes somos",
+      "url": "/quienes-somos"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Contacto",
+      "url": "/contact"
+    },
+    {
+      "name": "Blog",
+      "url": "/posts"
     },
     {
       "name": "Privacy Policy",

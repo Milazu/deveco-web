@@ -4,7 +4,7 @@ import { plainify } from "@/lib/utils/textConverter";
 import Social from "./Social.astro";
 
 const { data } = Astro.props;
-const { title, image, social } = data.data;
+const { title, image, social, position } = data.data;
 ---
 
 <div
@@ -13,7 +13,7 @@ const { title, image, social } = data.data;
   {
     image && (
       <Image
-        class="mx-auto mb-6 rounded"
+        class="mx-auto mb-6 rounded deveco-border"
         src={image}
         alt={title}
         width={120}
@@ -21,11 +21,13 @@ const { title, image, social } = data.data;
       />
     )
   }
-  <h4 class="mb-3">
+  <h4 class="mb-2">
     <a href={`/authors/${data.slug}`}>{title}</a>
   </h4>
+  <h6 class="mb-4">{position}</h6>
   <p class="mb-4">
-    {plainify(data.body?.slice(0, 100))}
+    {/*plainify(data.body?.slice(0, 100))*/}
+    {plainify(data.body)}
   </p>
   <Social source={social} className="social-icons" />
 </div>

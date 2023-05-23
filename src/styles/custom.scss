@@ -1,0 +1,41 @@
+$deveco-purple: #6060a8;
+$deveco-blue: #43b2be;
+$deveco-green: #6ebc7e;
+
+
+// deveco
+.deveco-border{
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat, linear-gradient(90deg, $deveco-purple 0%, $deveco-blue 35%, $deveco-green 50%, $deveco-blue 65%, $deveco-purple 100%);
+    border-radius: 8px;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+
+.btn:hover{
+  background: -webkit-linear-gradient(0deg, $deveco-purple 0%, $deveco-blue 40%, $deveco-green 50%, $deveco-blue 60%, $deveco-purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.nav-link{
+    border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover{
+    background: -webkit-linear-gradient(0deg, $deveco-purple 0%, $deveco-blue 40%, $deveco-green 50%, $deveco-blue 60%, $deveco-purple 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid black;
+    font-weight: bold;
+  }
+
+.deveco-text-gradient{
+  background: -webkit-linear-gradient(0deg, $deveco-purple 0%, $deveco-blue 40%, $deveco-green 50%, $deveco-blue 60%, $deveco-purple 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
