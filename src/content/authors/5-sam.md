@@ -1,11 +1,10 @@
 ---
-title: Sam
-position: CEO/CTO
-email: mlaguna@deveco.it
+title: Sam 
+position: Branding & Design
+email: contacto@deveco.it
 image: "/images/photos/sam.jpeg"
-description: this is meta description
+description: Sam es un diseñador gráfico con años de experiencia en el sector. Especializado en diseño gráfico, diseño web y diseño de marca.
 social:
-  linkedin: https://www.facebook.com/
   behance: https://www.behance.net/wastedcollages
 ---
 

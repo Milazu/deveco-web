@@ -10,4 +10,4 @@ social:
   instagram: https://www.instagram.com/
 ---
 
-CEO/CTO de Deveco, Miguel es un ingeniero de software con más de 20 años de experiencia en el desarrollo de software. Ha trabajado en proyectos de desarrollo de software en una amplia gama de sectores, incluyendo la banca, la industria, la educación y el comercio electrónico. Miguel es un experto en el desarrollo de software de alta calidad y en la gestión de equipos de desarrollo de software.
+Ingeniero de software con más de 5 años de experiencia. Ha trabajado en proyectos de desarrollo de software en una amplia gama de sectores, incluyendo la industria, el retail, la educación y el comercio electrónico. Especializado en el desarrollo de software de alta calidad, seguro, y escalable así como en la gestión de proyectos Agile.
